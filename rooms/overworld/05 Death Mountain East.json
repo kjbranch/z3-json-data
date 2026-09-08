@@ -392,6 +392,24 @@
       ]
     },
     {
+      "link": [2, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 8],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 11],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -434,6 +452,111 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "devNote": ["FIXME: There is a way to go from 2 to 7 from the dark world to dark world with mirror."]
+    },
+    {
+      "link": [6, 9],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [9, 9],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [9, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Tektite (Red)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 11],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [9, 12],
+      "name": "Base - Hookshot",
+      "world": "light",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [12, 9],
+      "name": "Base - Hookshot",
+      "world": "light",
+      "requires": [
+        "Hookshot"
+      ]
     }
   ]
 }
