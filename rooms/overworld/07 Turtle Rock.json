@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 5,
+  "name": "Turtle Rock",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "West Edge",
+      "world": "both"
+    },
+    {
+      "id": 2,
+      "name": "Raised Platform",
+      "world": "both"
+    },
+    {
+      "id": 3,
+      "name": "Turtle Rock Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Turtle Rock Entrance",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2},
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedTurtleRock"}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Open Turtle Rock",
+      "world": "dark",
+      "requires": [
+        {"sword": 1},
+        "h_TurtleRockMedallion"
+      ],
+      "setsFlags": ["OpenedTurtleRock"]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}
