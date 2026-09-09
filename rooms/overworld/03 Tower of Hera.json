@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 3,
+  "name": "Tower of Hera",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Mountain Entrance Cave",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Old Man Cave",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Dark Death Mountain Great Fairy",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Old Man's House",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Old Man's House Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Old Man's House Back Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Old Man's House Back Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Lower East Edge",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [50, 56]}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Long Staircase",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Death Mountain Return Cave",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "South of Spectacle Rock Peak",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Top Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dark World Portal",
+      "world": "both"
+    },
+    {
+      "id": 8,
+      "name": "On Spectacle Rock Peak",
+      "world": "both"
+    },
+    {
+      "id": 9,
+      "name": "Upper Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [7, 9]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Tower of Hera Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Ganon's Tower Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Left Balcony",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Bottom Left Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Middle Balcony",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Bottom Right Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Far Right Balcony",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Spike Cave Entrance",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Spectacle Rock Item",
+      "itemLocation": 8,
+      "world": "light",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180140"
+    },
+    {
+      "id": 2,
+      "locationName": "Ether Tablet",
+      "itemLocation": 9,
+      "world": "light",
+      "item": "Ether",
+      "itemAddress": "0x180016"
+    }
+  ],
+  "strats": []
+}
