@@ -162,5 +162,154 @@
       "itemAddress": "0x180016"
     }
   ],
-  "strats": []
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Deadrock", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Invincibility",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 32},
+          {"cape": 35}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Deadrock", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Invincibility",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 32},
+          {"cape": 35}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Falling Boulder", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [5, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [10, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [11, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [12, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+  ]
 }
