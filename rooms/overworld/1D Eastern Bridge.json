@@ -1,0 +1,124 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 19,
+  "name": "Eastern Bridge",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [4, 18]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Northeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [23, 27]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Northwest Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [4.5, 16]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "River",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [18.5, 20.5], "terrain": "water"}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "Hammer",
+          {"glove": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "Hammer",
+          {"glove": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    }
+  ]
+}

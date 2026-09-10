@@ -19,12 +19,6 @@
           "nodeType": "door"
         },
         {
-          "id": 10,
-          "name": "Sahasrahla's Hut",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 22,
           "name": "Mini Moldorm Cave",
           "area": "Light World",
@@ -45,12 +39,6 @@
         {
           "id": 29,
           "name": "Desert Palace Stairs",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 30,
-          "name": "Eastern Palace",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -137,14 +125,6 @@
           "name": "Lake Hylia Fortune Teller",
           "area": "Light World",
           "nodeType": "door"
-        },
-        {
-          "id": 69,
-          "name": "Flute Spot",
-          "area": "Light World",
-          "nodeType": "item",
-          "nodeItem": "OcarinaInactive",
-          "nodeAddress": "0x18014A"
         },
         {
           "id": 70,

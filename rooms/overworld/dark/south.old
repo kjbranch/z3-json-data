@@ -38,14 +38,6 @@
           "nodeType": "door"
         },
         {
-          "id": 12,
-          "name": "Stumpy",
-          "area": "South Dark World",
-          "nodeType": "item",
-          "nodeItem": "Shovel",
-          "nodeAddress": "0x330C7"
-        },
-        {
           "id": 14,
           "name": "Bombos Tablet",
           "area": "South Dark World",

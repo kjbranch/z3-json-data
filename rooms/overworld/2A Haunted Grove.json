@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 25,
+  "name": "Haunted Grove",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [13.5, 16.5]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Southwest Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [3, 7.5]},
+        {"edge": "west", "span": [22.5, 27.5]}
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Grove Dig Spot",
+      "itemLocation": 1,
+      "world": "light",
+      "item": "OcarinaInactive",
+      "itemAddress": "0x18014A"
+    },
+    {
+      "id": 2,
+      "locationName": "Stumpy's Gift",
+      "itemLocation": 1,
+      "world": "dark",
+      "item": "Shovel",
+      "itemAddress": "0x330C7"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Dig",
+      "world": "light",
+      "requires": [
+        "Shovel"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Stumpy",
+      "world": "dark",
+      "requires": [],
+      "collectsItems": [2]
+    }
+  ]
+}
