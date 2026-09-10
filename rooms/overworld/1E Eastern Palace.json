@@ -1,0 +1,149 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 20,
+  "name": "Eastern Palace",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southern Half",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [7, 10]},
+        {"edge": "south", "span": [55, 57]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Palace of Darkness Cottage",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Northwest Area",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Sahasrahla's Hut",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Northeast Dungeon Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Eastern Palace Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Palace of Darkness Entrance",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 4},
+          {"silverArrows": 2},
+          {"rod": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Pay Kiki",
+      "world": "dark",
+      "requires": [
+        {"follower": "None"},
+        {"pay": 110}
+      ],
+      "setsFlags": ["OpenedPalaceOfDarkness"],
+      "devNote": ["Kiki cannot leave the room, so there isn't much need to use a Kiki follower object to represent unlocking the dungeon."]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Already Opened",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedPalaceOfDarkness"}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    }
+  ]
+}
