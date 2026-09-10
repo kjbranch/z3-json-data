@@ -17,18 +17,6 @@
           "name": "Dark Lake Hylia Teleporter",
           "area": "East Dark World",
           "nodeType": "door"
-        },
-        {
-          "id": 7,
-          "name": "Ice Lake Inlet Great Fairy",
-          "area": "East Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 9,
-          "name": "Dark East Portal Cave",
-          "area": "East Dark World",
-          "nodeType": "door"
         }
       ]
     }

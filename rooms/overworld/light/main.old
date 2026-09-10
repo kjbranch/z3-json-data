@@ -61,20 +61,8 @@
           "nodeType": "door"
         },
         {
-          "id": 37,
-          "name": "East Hyrule Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 38,
           "name": "South Hyrule Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 51,
-          "name": "Long Fairy Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -99,12 +87,6 @@
         {
           "id": 58,
           "name": "50 Rupee Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 60,
-          "name": "Lake Hylia Inlet Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },
