@@ -19,12 +19,6 @@
           "nodeType": "door"
         },
         {
-          "id": 10,
-          "name": "Sahasrahla's Hut",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 22,
           "name": "Mini Moldorm Cave",
           "area": "Light World",
@@ -49,12 +43,6 @@
           "nodeType": "door"
         },
         {
-          "id": 30,
-          "name": "Eastern Palace",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 31,
           "name": "Master Sword Meadow",
           "area": "Light World",
@@ -73,20 +61,8 @@
           "nodeType": "door"
         },
         {
-          "id": 37,
-          "name": "East Hyrule Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 38,
           "name": "South Hyrule Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 51,
-          "name": "Long Fairy Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -115,12 +91,6 @@
           "nodeType": "door"
         },
         {
-          "id": 60,
-          "name": "Lake Hylia Inlet Great Fairy",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 61,
           "name": "Swamp Great Fairy",
           "area": "Light World",
@@ -137,14 +107,6 @@
           "name": "Lake Hylia Fortune Teller",
           "area": "Light World",
           "nodeType": "door"
-        },
-        {
-          "id": 69,
-          "name": "Flute Spot",
-          "area": "Light World",
-          "nodeType": "item",
-          "nodeItem": "OcarinaInactive",
-          "nodeAddress": "0x18014A"
         },
         {
           "id": 70,

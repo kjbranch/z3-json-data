@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 30,
+  "name": "East Warp Point",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [23, 25]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Long Fairy Cave",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Dark East Portal Cave",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hammer Fence Circle",
+      "world": "both"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [2, 2],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        {"glove": 1}
+      ]
+    }
+  ]
+}
