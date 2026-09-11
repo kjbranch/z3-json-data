@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 3,
+  "name": "Zora's Waterfall",
+  "roomType": "Special",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "South Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "King Zora",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Ledge Item",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "King Zora's Item",
+      "itemLocation": 2,
+      "item": "Flippers",
+      "itemAddress": "0xEE1C3"
+    },
+    {
+      "id": 2,
+      "locationName": "Ledge Item",
+      "itemLocation": 3,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180149"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Buy the Item",
+      "requires": [
+        {"pay": 500}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Grab the Item",
+      "requires": [],
+      "collectsItems": [2]
+    }
+  ]
+}
