@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 1,
+  "name": "Sacred Grove",
+  "roomType": "Special",
+  "note": ["Technically, this is the same room as Under the Bridge."],
+  "nodes": [
+    {
+      "id": 1,
+      "name": "South Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Master Sword Pedestal",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Pedestal Item",
+      "itemLocation": 2,
+      "item": "L2Sword",
+      "itemAddress": "0x289B0"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Pedestal Item",
+      "requires": [
+        "PendantOfCourage",
+        "PendantOfWisdom",
+        "PendantOfPower"
+      ],
+      "collectsItems": [1]
+    }
+  ]
+}

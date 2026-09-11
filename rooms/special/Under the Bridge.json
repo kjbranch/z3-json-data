@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 2,
+  "name": "Under the Bridge",
+  "roomType": "Special",
+  "note": ["Technically, this is the same room as the Sacred Grove."],
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Water Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Camper",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Camper's Item",
+      "itemLocation": 2,
+      "item": "Bottle",
+      "itemAddress": "0x33E7D"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Camper's Item",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

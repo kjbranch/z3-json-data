@@ -147,6 +147,13 @@
   "items": [
     {
       "id": 1,
+      "locationName": "Rescue Old Man",
+      "itemLocation": 2,
+      "item": "MagicMirror",
+      "itemAddress": "0xF69FA"
+    },
+    {
+      "id": 2,
       "locationName": "Spectacle Rock Item",
       "itemLocation": 8,
       "world": "light",
@@ -154,7 +161,7 @@
       "itemAddress": "0x180140"
     },
     {
-      "id": 2,
+      "id": 3,
       "locationName": "Ether Tablet",
       "itemLocation": 9,
       "world": "light",
@@ -228,6 +235,16 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Rescue Old Man",
+      "world": "light",
+      "requires": [
+        {"follower": "Old Man"}
+      ],
+      "collectsItems": [1],
+      "FollowerComplete": "Old Man"
     },
     {
       "link": [2, 3],
@@ -373,7 +390,7 @@
       "name": "Base - Collect Item",
       "world": "light",
       "requires": [],
-      "collectsItems": [1]
+      "collectsItems": [2]
     },
     {
       "link": [8, 9],
@@ -401,7 +418,7 @@
         {"sword": 2},
         "BookOfMudora"
       ],
-      "collectsItems": [2]
+      "collectsItems": [3]
     },
     {
       "link": [10, 5],

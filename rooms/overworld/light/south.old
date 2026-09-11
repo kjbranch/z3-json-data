@@ -21,21 +21,6 @@
       ]
     },
     {
-      "id": 43,
-      "name": "Camper's Bridge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Camper",
-          "area": "Camper's Bridge",
-          "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0x33E7D"
-        }
-      ]
-    },
-    {
       "id": 48,
       "name": "Cave 45 Ledge",
       "roomType": "LightWorld",

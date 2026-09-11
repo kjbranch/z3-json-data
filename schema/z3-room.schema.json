@@ -28,7 +28,8 @@
         "Cave",
         "Dungeon",
         "House",
-        "Overworld"
+        "Overworld",
+        "Special"
       ]
     },
     "note": {
