@@ -21,19 +21,6 @@
       ]
     },
     {
-      "id": 48,
-      "name": "Cave 45 Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Cave 45",
-          "area": "Cave 45 Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
       "id": 64,
       "name": "Lake Hylia Island",
       "roomType": "LightWorld",

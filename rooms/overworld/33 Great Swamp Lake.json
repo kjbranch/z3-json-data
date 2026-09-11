@@ -1,0 +1,104 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 33,
+  "name": "Great Swamp Lake",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "West Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [8.5, 12]},
+        {"edge": "west", "span": [5.5, 29]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "East Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [8, 15]},
+        {"edge": "east", "span": [21, 29]},
+        {"edge": "south", "span": [10, 28]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hammer Peg Blocked Teleporter",
+      "world": "both"
+    },
+    {
+      "id": 4,
+      "name": "Lake",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [15, 21], "terrain": "water"}
+      ],
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Great Swamp Lake Whirlpool",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [3, 3],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    }
+  ]
+}

@@ -13,22 +13,10 @@
           "nodeType": "drop"
         },
         {
-          "id": 2,
-          "name": "Hype Cave",
-          "area": "South Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 3,
           "name": "Swamp Palace",
           "area": "South Dark World",
           "requires": [ "DrainedFloodgate" ],
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "Cave 45 Mirror Spot",
-          "area": "South Dark World",
           "nodeType": "door"
         },
         {
@@ -93,24 +81,6 @@
           "name": "Dark Lake Hylia Ledge Drop",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Shopping Mall Great Fairy",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Shopping Mall East Cave",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Shopping Mall Spike Cave",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
         }
       ]
     }

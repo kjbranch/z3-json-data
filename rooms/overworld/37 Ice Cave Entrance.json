@@ -1,0 +1,226 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 36,
+  "name": "Ice Cave Entrance",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [14, 29]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Ice Cave East Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Shopping Mall East Cave",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "River",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [7.5, 9.5], "terrain": "water"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Light World Bombable Wall",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Ice Cave West Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dark World Bombable Wall",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Shopping Mall Great Fairy",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Light World Lift Rock Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "20 Rupee Cave",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Dark World Lift Rock Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Shopping Mall Spike Cave",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "locationName": "Bombable Wall",
+      "world": "dark",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 3,
+      "locationName": "Lift Rock Entrance",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "glove"
+    },
+    {
+      "id": 4,
+      "locationName": "Lift Rock Entrance",
+      "world": "dark",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "glove"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb",
+      "world": "light",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb",
+      "world": "dark",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Glove",
+      "world": "light",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [3]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Glove",
+      "world": "dark",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base - Already Bombed",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base - Already Bombed",
+      "world": "dark",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [1, 5],
+      "name": "Base - Already Lifted",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base - Already Lifted",
+      "world": "dark",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [5, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}

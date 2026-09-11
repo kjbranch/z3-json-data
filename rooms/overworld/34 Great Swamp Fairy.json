@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 34,
+  "name": "Great Swamp Fairy",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [13, 16]},
+        {"edge": "south", "span": [3, 28]},
+        {"edge": "west", "span": [8, 15]},
+        {"edge": "west", "span": [21, 29]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lake Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "west", "span": [15, 21], "terrain": "water"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Light World Bombable Wall",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Swamp Great Fairy Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dark World Bombable Wall",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hype Cave Entrance",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "locationName": "Bombable Wall",
+      "world": "dark",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb",
+      "world": "light",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb",
+      "world": "dark",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base - Already Bombed",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base - Already Bombed",
+      "world": "dark",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}
