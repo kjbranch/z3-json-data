@@ -19,12 +19,6 @@
           "nodeType": "door"
         },
         {
-          "id": 23,
-          "name": "Ice Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 24,
           "name": "Lake Hylia Central Island Pier",
           "area": "Light World",
@@ -43,12 +37,6 @@
           "nodeType": "door"
         },
         {
-          "id": 53,
-          "name": "20 Rupee Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 54,
           "name": "Lake Hylia Shop",
           "area": "Light World",
@@ -57,12 +45,6 @@
         {
           "id": 58,
           "name": "50 Rupee Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 61,
-          "name": "Swamp Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },
