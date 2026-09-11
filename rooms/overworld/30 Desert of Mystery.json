@@ -1,0 +1,332 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 31,
+  "name": "Desert of Mystery",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [56, 60]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Aginah's Cave",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Mire East Cave",
+          "world": "dark"
+        },
+        {
+          "id": 3,
+          "name": "Mire Great Fairy Cave",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Desert Palace Main Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Desert Palace Main Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Desert West Ledge",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Desert Palace West Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Mire Shed Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Desert Palace Rock Blocked Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Desert Palace Second Half Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Southwest Dark Portal Ledge",
+      "world": "both"
+    },
+    {
+      "id": 6,
+      "name": "Northeast Ledge",
+      "world": "both"
+    },
+    {
+      "id": 7,
+      "name": "Desert Palace East Drop Exit",
+      "world": "light",
+      "note": ["There is not a way to mirror in to this location."]
+    },
+    {
+      "id": 8,
+      "name": "Southeast Bombos Tablet Ledge",
+      "world": "light",
+      "transitions": [
+        {"edge": "east", "span": [43, 51.5]}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Checkerboard Cave Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Checkerboard Cave",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Misery Mire Main Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Misery Mire Main Entrance",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "West Ledge Item",
+      "itemLocation": 3,
+      "world": "light",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180143"
+    },
+    {
+      "id": 2,
+      "locationName": "Bombos Tablet",
+      "itemLocation": 8,
+      "world": "light",
+      "item": "Bombos",
+      "itemAddress": "0x180017"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Northeast Lift Rock",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 6,
+      "keyType": "glove"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "BookOfMudora"
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Dacto", "count": 1}}
+        ]}
+      ],
+      "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Dacto", "count": 1}}
+        ]}
+      ],
+      "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Open Misery Mire",
+      "world": "dark",
+      "requires": [
+        {"sword": 1},
+        "h_MiseryMireMedallion"
+      ],
+      "setsFlags": ["OpenedMiseryMire"]
+    },
+    {
+      "link": [2, 10],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedMiseryMire"}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [5, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [6, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [6, 9],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [7, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [8, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [8, 8],
+      "name": "Bombos Tablet",
+      "world": "light",
+      "requires": [
+        {"sword": 2},
+        "BookOfMudora"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [9, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [10, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}

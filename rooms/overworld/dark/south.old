@@ -36,14 +36,6 @@
           "name": "Ice Lake Shop",
           "area": "South Dark World",
           "nodeType": "door"
-        },
-        {
-          "id": 14,
-          "name": "Bombos Tablet",
-          "area": "South Dark World",
-          "nodeType": "item",
-          "nodeItem": "Bombos",
-          "nodeAddress": "0x180017"
         }
       ]
     },

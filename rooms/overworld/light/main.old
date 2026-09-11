@@ -13,12 +13,6 @@
           "nodeType": "door"
         },
         {
-          "id": 9,
-          "name": "Aginah's Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 22,
           "name": "Mini Moldorm Cave",
           "area": "Light World",
@@ -37,26 +31,8 @@
           "nodeType": "door"
         },
         {
-          "id": 29,
-          "name": "Desert Palace Stairs",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 31,
-          "name": "Master Sword Meadow",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 35,
           "name": "Flute Spot 1",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 36,
-          "name": "Dark Desert Teleporter",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -93,12 +69,6 @@
         {
           "id": 61,
           "name": "Swamp Great Fairy",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 62,
-          "name": "Desert Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },

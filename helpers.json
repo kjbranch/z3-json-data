@@ -100,6 +100,15 @@
     ]
   },
   {
+    "name": "h_MiseryMireMedallion",
+    "requires": [
+      "Ether"
+    ],
+    "note": [
+      "The medallion required to open Misery Mire. Randomizers may wish to randomize this."
+    ]
+  },
+  {
     "name": "h_TurtleRockMedallion",
     "requires": [
       "Quake"
