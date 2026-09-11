@@ -15,16 +15,6 @@
       "nodeType": "door"
     }
   ],
-  "items": [
-    {
-      "id": 1,
-      "locationName": "Rescue Old Man",
-      "itemLocation": 2,
-      "item": "MagicMirror",
-      "itemAddress": "0xF69FA",
-      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
-    }
-  ],
   "strats": [
     {
       "link": [1, 2],
@@ -161,16 +151,6 @@
         "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
       ],
       "setsFollower": "Old Man"
-    },
-    {
-      "link": [2, 2],
-      "name": "Rescue Old Man",
-      "requires": [
-        {"follower": "Old Man"}
-      ],
-      "collectsItems": [1],
-      "FollowerComplete": "Old Man",
-      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
     }
   ]
 }
