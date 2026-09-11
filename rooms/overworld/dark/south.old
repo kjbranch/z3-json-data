@@ -26,12 +26,6 @@
           "nodeType": "door"
         },
         {
-          "id": 6,
-          "name": "Cave 45 Mirror Spot",
-          "area": "South Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 11,
           "name": "Ice Lake Shop",
           "area": "South Dark World",

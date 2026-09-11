@@ -37,12 +37,6 @@
           "nodeType": "door"
         },
         {
-          "id": 38,
-          "name": "South Hyrule Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 52,
           "name": "Good Bee Cave",
           "area": "Light World",
