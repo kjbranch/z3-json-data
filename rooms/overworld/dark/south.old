@@ -7,80 +7,11 @@
       "roomType": "DarkWorld",
       "nodes": [
         {
-          "id": 1,
-          "name": "Dark Lake Hylia Drop (South)",
-          "area": "South Dark World",
-          "nodeType": "drop"
-        },
-        {
           "id": 3,
           "name": "Swamp Palace",
           "area": "South Dark World",
           "requires": [ "DrainedFloodgate" ],
           "nodeType": "door"
-        },
-        {
-          "id": 11,
-          "name": "Ice Lake Shop",
-          "area": "South Dark World",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 124,
-      "name": "Dark Lake Hylia",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lake Hylia Island Mirror Spot",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "East Dark World Pier",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Dark Lake Hylia Ledge",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "name": "Dark Lake Hylia Central Island",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Ice Palace",
-          "area": "Dark Lake Hylia Central Island",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Lake Hylia Central Island Mirror Spot",
-          "area": "Dark Lake Hylia Central Island",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 126,
-      "name": "Dark Lake Hylia Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Dark Lake Hylia Ledge Drop",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "drop"
         }
       ]
     }

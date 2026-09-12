@@ -108,12 +108,12 @@
     },
     {
       "id": 10,
-      "name": "Misery Mire Main Entrance",
+      "name": "Misery Mire Dungeon Entrance",
       "world": "both",
       "entrances": [
         {
           "id": 1,
-          "name": "Misery Mire Main Entrance",
+          "name": "Misery Mire Dungeon Entrance",
           "world": "dark"
         }
       ]
