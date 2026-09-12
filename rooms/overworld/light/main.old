@@ -13,18 +13,6 @@
           "nodeType": "door"
         },
         {
-          "id": 22,
-          "name": "Mini Moldorm Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 24,
-          "name": "Lake Hylia Central Island Pier",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 35,
           "name": "Flute Spot 1",
           "area": "Light World",
@@ -37,20 +25,8 @@
           "nodeType": "door"
         },
         {
-          "id": 54,
-          "name": "Lake Hylia Shop",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 58,
           "name": "50 Rupee Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 64,
-          "name": "Lake Hylia Fortune Teller",
           "area": "Light World",
           "nodeType": "door"
         },
