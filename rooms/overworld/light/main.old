@@ -25,30 +25,12 @@
           "nodeType": "door"
         },
         {
-          "id": 58,
-          "name": "50 Rupee Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 70,
           "name": "Sunken Treasure",
           "area": "Light World",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
           "nodeAddress": "0x180145"
-        },
-        {
-          "id": 71,
-          "name": "Purple Chest",
-          "area": "Light World",
-          "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0x33D68",
-          "requires": [
-            "RescuedBlacksmith",
-            "isLightLink"
-          ]
         }
       ]
     }
