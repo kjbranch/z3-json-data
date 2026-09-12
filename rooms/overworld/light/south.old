@@ -7,12 +7,6 @@
       "roomType": "LightWorld",
       "nodes": [
         {
-          "id": 1,
-          "name": "Lake Hylia Great Fairy",
-          "area": "Lake Hylia Central Island",
-          "nodeType": "door"
-        },
-        {
           "id": 2,
           "name": "Lake Hylia Central Island Teleporter",
           "area": "Lake Hylia Central Island",
@@ -30,8 +24,8 @@
           "name": "Lake Hylia Island",
           "area": "Lake Hylia Island",
           "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180144"
+          "nodeItem": "",
+          "nodeAddress": ""
         }
       ]
     }
